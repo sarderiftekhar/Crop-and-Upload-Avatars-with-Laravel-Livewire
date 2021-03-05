@@ -6,7 +6,7 @@
             x-data="{
                 setUp() {
                     const cropper = new Cropper(document.getElementById('avatar'), {
-                        aspectRatio: 1/1,
+                        aspectRatio: 1,
                         autoCropArea: 1,
                         viewMode: 1,
                         crop (event) {
@@ -21,7 +21,7 @@
             x-init="setUp"
         >
             <div class="mb-2">
-                <img id="avatar" src="{{ $avatar->temporaryUrl() }}" style="width: 350px; max-width: 500px;">
+                <img id="avatar" src="{{ $avatar->temporaryUrl() }}" style="width: 500px;">
             </div>
 
             <button type="submit" class="btn btn-link">
